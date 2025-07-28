@@ -105,3 +105,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  .gradient-orange {
+    background: linear-gradient(135deg, #ff6f00, #ffb74d);
+  }
+
+  .gradient-green {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+  }
+
+  .gradient-blue {
+    background: linear-gradient(135deg, #2196f3, #64b5f6);
+  }
+}
