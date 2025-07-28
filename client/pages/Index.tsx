@@ -100,43 +100,54 @@ export default function Index() {
         <div className="absolute left-[5%] top-1/2 w-5 h-5 rounded-full bg-gradient-to-br from-[#4caf50] to-[#81c784] opacity-60"></div>
         <div className="absolute bottom-5 right-[15%] w-8 h-8 rounded-full bg-gradient-to-br from-[#2196f3] to-[#64b5f6] opacity-70"></div>
 
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <div className="inline-block bg-[#ff6f00]/10 rounded-full px-4 py-2 mb-8">
-            <span className="text-[#ff6f00] text-sm font-medium">Registrations Ongoing!</span>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-left">
+              <div className="inline-block bg-[#ff6f00]/10 rounded-full px-4 py-2 mb-8">
+                <span className="text-[#ff6f00] text-sm font-medium">Registrations Ongoing!</span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-black">
+                <span>Master AI for </span>
+                <span className="text-[#ff6f00]">Viral TikTok</span>
+                <span> Content Creation</span>
+              </h1>
+
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl">
+                Learn the exact Custom GPT system used by top creators to generate viral TikTok content that gets millions of views and builds massive followings.
+              </p>
+
+              <div className="relative inline-block mb-8">
+                <span className="text-gray-500 text-base transform -rotate-3 inline-block font-handwriting">
+                  Join 5,000+ creators already dominating TikTok
+                </span>
+                <div className="absolute -top-5 -right-8 w-10 h-10 bg-[url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23FF6F00%22%3e%3cpath d=%22M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z%22/%3e%3c/svg%3e')] bg-no-repeat bg-center bg-contain"></div>
+              </div>
+
+              <Button 
+                onClick={() => scrollToSection('pricing')}
+                className="bg-[#ff6f00] hover:bg-[#ff6f00]/90 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-[0_8px_25px_rgba(255,111,0,0.3)] hover:transform hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(255,111,0,0.4)] transition-all duration-300"
+              >
+                Get Instant Access - Save $200 Today
+              </Button>
+            </div>
+
+            <div className="relative">
+              <img 
+                src="https://images.pexels.com/photos/7480546/pexels-photo-7480546.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&dpr=1" 
+                alt="Content creators making social media videos"
+                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+              />
+              <div className="absolute -top-4 -left-4 w-24 h-24 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#ff6f00">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+            </div>
           </div>
-
-          <div className="flex justify-center items-center gap-4 mb-8">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#ff6f00] to-[#ffb74d] border-3 border-white shadow-lg"></div>
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#4caf50] to-[#81c784] border-4 border-white shadow-xl z-10"></div>
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#2196f3] to-[#64b5f6] border-3 border-white shadow-lg"></div>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-black">
-            <span>Master AI for </span>
-            <span className="text-[#ff6f00]">Viral TikTok</span>
-            <span> Content Creation</span>
-          </h1>
-
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Learn the exact Custom GPT system used by top creators to generate viral TikTok content that gets millions of views and builds massive followings.
-          </p>
-
-          <div className="relative inline-block mb-12">
-            <span className="text-gray-500 text-base transform -rotate-3 inline-block font-handwriting">
-              Join 5,000+ creators already dominating TikTok
-            </span>
-            <div className="absolute -top-5 -right-8 w-10 h-10 bg-[url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23FF6F00%22%3e%3cpath d=%22M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z%22/%3e%3c/svg%3e')] bg-no-repeat bg-center bg-contain"></div>
-          </div>
-
-          <Button 
-            onClick={() => scrollToSection('pricing')}
-            className="bg-[#ff6f00] hover:bg-[#ff6f00]/90 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-[0_8px_25px_rgba(255,111,0,0.3)] hover:transform hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(255,111,0,0.4)] transition-all duration-300 mb-12"
-          >
-            Get Instant Access - Save $200 Today
-          </Button>
 
           {/* Feature Grid */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
             <div className="bg-[#ff6f00]/5 rounded-2xl p-6 text-center">
               <div className="w-15 h-15 bg-[#ff6f00] rounded-full mx-auto mb-4 flex items-center justify-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
@@ -197,80 +208,54 @@ export default function Index() {
       {/* Curriculum Section */}
       <section id="curriculum" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Complete AI TikTok Mastery Curriculum</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Everything you need to create viral content using cutting-edge AI technology
-            </p>
-          </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Complete AI TikTok Mastery Curriculum</h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Everything you need to create viral content using cutting-edge AI technology
+              </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">AI Fundamentals for Content Creation</h3>
-                  <p className="text-gray-600">Master the basics of AI and how it applies to viral content creation</p>
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">AI Fundamentals for Content Creation</h3>
+                    <p className="text-gray-600">Master the basics of AI and how it applies to viral content creation</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Custom GPT Development</h3>
-                  <p className="text-gray-600">Build your own specialized GPT for TikTok content generation</p>
+                
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Custom GPT Development</h3>
+                    <p className="text-gray-600">Build your own specialized GPT for TikTok content generation</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Viral Content Frameworks</h3>
-                  <p className="text-gray-600">Learn the psychological triggers that make content go viral</p>
+                
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Viral Content Frameworks</h3>
+                    <p className="text-gray-600">Learn the psychological triggers that make content go viral</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Algorithm Optimization</h3>
-                  <p className="text-gray-600">Understand and exploit TikTok's algorithm for maximum reach</p>
+                
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Algorithm Optimization</h3>
+                    <p className="text-gray-600">Understand and exploit TikTok's algorithm for maximum reach</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">5</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Content Production Pipeline</h3>
-                  <p className="text-gray-600">Streamline your content creation process with AI automation</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">6</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Trend Analysis & Prediction</h3>
-                  <p className="text-gray-600">Use AI to identify and capitalize on emerging trends</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">7</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Monetization Strategies</h3>
-                  <p className="text-gray-600">Turn your viral content into sustainable income streams</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-[#ff6f00] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">8</div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Advanced AI Techniques</h3>
-                  <p className="text-gray-600">Cutting-edge methods used by top creators</p>
-                </div>
-              </div>
+            <div className="relative">
+              <img 
+                src="https://images.pexels.com/photos/17483869/pexels-photo-17483869.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" 
+                alt="AI brain neural network technology"
+                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -333,10 +318,14 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-[#f8f9fa] rounded-2xl p-6">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#ff6f00] to-[#ffb74d] rounded-full"></div>
+                <img 
+                  src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1" 
+                  alt="Sarah Chen - TikTok creator"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div className="ml-3">
                   <h4 className="font-semibold">Sarah Chen</h4>
-                  <p className="text-sm text-gray-600">@sarahcreatess • 2.3M followers</p>
+                  <p className="text-sm text-gray-600">@sarahcreates • 2.3M followers</p>
                 </div>
               </div>
               <div className="flex mb-3">
@@ -351,7 +340,11 @@ export default function Index() {
 
             <div className="bg-[#f8f9fa] rounded-2xl p-6">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#4caf50] to-[#81c784] rounded-full"></div>
+                <img 
+                  src="https://images.pexels.com/photos/31422830/pexels-photo-31422830.png?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1" 
+                  alt="Marcus Johnson - TikTok creator"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div className="ml-3">
                   <h4 className="font-semibold">Marcus Johnson</h4>
                   <p className="text-sm text-gray-600">@marcusvibes • 1.8M followers</p>
@@ -369,7 +362,11 @@ export default function Index() {
 
             <div className="bg-[#f8f9fa] rounded-2xl p-6">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#2196f3] to-[#64b5f6] rounded-full"></div>
+                <img 
+                  src="https://images.pexels.com/photos/27603433/pexels-photo-27603433.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1" 
+                  alt="Emma Rodriguez - TikTok creator"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div className="ml-3">
                   <h4 className="font-semibold">Emma Rodriguez</h4>
                   <p className="text-sm text-gray-600">@emmacreates • 950K followers</p>
@@ -425,7 +422,11 @@ export default function Index() {
               </div>
             </div>
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-[#ff6f00] to-[#ffb74d] rounded-2xl"></div>
+              <img 
+                src="https://images.pexels.com/photos/6326377/pexels-photo-6326377.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&dpr=1" 
+                alt="Alex Thompson - AI TikTok instructor and former algorithm engineer"
+                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
+              />
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-white rounded-2xl shadow-lg flex items-center justify-center">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="#ff6f00">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -855,18 +856,6 @@ export default function Index() {
           </div>
         </div>
       </footer>
-
-      {/* Get Template Button */}
-      <div className="fixed bottom-5 right-5 z-50">
-        <div className="bg-white rounded-xl p-3 shadow-lg cursor-pointer hover:transform hover:-translate-y-1 transition-all">
-          <div className="flex items-center gap-3">
-            <svg width="11" height="16" viewBox="0 0 12 17" fill="none">
-              <path d="M11.5 0.46875V5.80175H6L0.5 0.46875H11.5ZM0.5 5.80175H6L11.5 11.1357H6V16.4688L0.5 11.1357V5.80175Z" fill="#222222"/>
-            </svg>
-            <span className="text-xs text-black font-medium">Get this template</span>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
